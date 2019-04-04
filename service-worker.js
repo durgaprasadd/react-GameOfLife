@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/react-GameOfLife/precache-manifest.21197760c598f50d95db9dade9f5ca5e.js"
+  "/react-GameOfLife/precache-manifest.d2bc5b8c4b9babb813283ac19d7f3950.js"
 );
 
 workbox.clientsClaim();
