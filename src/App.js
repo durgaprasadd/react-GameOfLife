@@ -30,7 +30,9 @@ class App extends Component {
 
 
   handleClick(event) {
-    const id = +event.target.id;
+    let id = event.target.id;
+    if (!id) return;
+    id = +id;
     this.setState(state => {
       let { grid } = state;
       const rowIndex = Math.floor(id / this.height);
@@ -44,7 +46,7 @@ class App extends Component {
     let { grid } = this.state;
     return grid.every(row => row.every(cell => cell === 0));
   }
-  
+
   start() {
     if (this.timer) return;
     this.canClick = false;
