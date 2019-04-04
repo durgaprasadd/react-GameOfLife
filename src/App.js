@@ -63,12 +63,12 @@ class App extends Component {
   stop() {
     this.stopInterval();
     this.setState(state => state);
-    this.timer = '';
   }
 
   stopInterval() {
     this.canClick = true;
     clearInterval(this.timer)
+    this.timer = '';
   }
 
   reset() {
