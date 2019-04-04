@@ -42,8 +42,9 @@ class App extends Component {
 
   isAllDead() {
     let { grid } = this.state;
-    return grid.every(row => row.every(cell => cell == 0));
+    return grid.every(row => row.every(cell => cell === 0));
   }
+  
   start() {
     if (this.timer) return;
     this.canClick = false;
